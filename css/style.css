@@ -1,0 +1,92 @@
+/* =======================================
+             Common Styles
+ ========================================*/
+ *{
+     margin: 0;
+     padding: 0;
+ }
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#F3F1FF ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+h1{
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+p{
+    color:#3A3A3A ;
+}
+
+/*===========================================
+               Navbar
+ ============================================*/
+.navbar{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .navbar_nav-2 ul {
+     display: flex;
+ }
+ .navbar_nav-2 ul li {
+    list-style:none;
+    
+ }
+ .navbar_nav-2 ul li a{
+     color: black;
+     text-decoration: none;
+     margin: 5px 10px;
+     transition: .3s;
+ }
+ .navbar_nav-2 li:hover a{
+     color: rgb(255, 60, 93);
+ }
+
+ /* =============================================================
+                            First Banner 
+ ================================================================*/
+ .first_banner{
+     display: flex;
+     align-items: center;
+     margin-top: 80px;
+ }
+ .half_banner .information{
+     width: 582px;
+ }
+
+ .half_banner .banner_img img {
+     width: 440px;
+     background-image:url(/images/Circle\ design.svg);
+ }
+ .information .btn{
+    margin-top: 16.1px;
+ }
+ .information .btn a{
+     text-decoration: none;
+     color: #ffffff;
+     background-color: #E02C6D;
+     padding: 10px 24px;
+     border-radius: 25px;
+     transition: .4s;
+ }
+ .information .btn:hover a{
+     background-color: transparent;
+     border: 1px solid black;
+     color: black;
+ }
