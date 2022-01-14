@@ -76,6 +76,7 @@ p{
  }
  .information .btn{
     margin-top: 16.1px;
+    display: inline-block;
  }
  .information .btn a{
      text-decoration: none;
@@ -90,3 +91,14 @@ p{
      border: 1px solid black;
      color: black;
  }
+ /*================================================
+                     Logo Part
+ ================================================ */
+ .logo_part{
+     display: flex;
+     justify-content: space-around;
+ }
+ .logo_part li{
+     list-style: none;
+ }
+ 
