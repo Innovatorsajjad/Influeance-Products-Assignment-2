@@ -5,6 +5,9 @@
      margin: 0;
      padding: 0;
  }
+ img{
+     width:100% ;
+ }
 body{
     font-family: 'Poppins', sans-serif;
     background-color:#F3F1FF ;
@@ -24,7 +27,7 @@ main{
     margin-top: 30px;
 }
 h1{
-    font-size: 52px;
+    font-size: 45px;
     font-weight: 700;
     
 }
@@ -79,9 +82,10 @@ p{
      align-items: center;
      margin-top: 80px;
  }
- .half_banner .information{
-     width: 582px;
- }
+.half_banner{
+    width: 530px;
+}
+  
 
  .half_banner .banner_img img {
      width: 440px;
@@ -91,7 +95,11 @@ p{
     margin-top: 16.1px;
     display: inline-block;
  }
- .information .btn a{
+ .btn{
+     display: inline-block;
+     margin-top: 30px;
+ }
+.btn a{
      text-decoration: none;
      color: #ffffff;
      background-color: #E02C6D;
@@ -99,7 +107,7 @@ p{
      border-radius: 25px;
      transition: .4s;
  }
- .information .btn:hover a{
+.btn:hover a{
      background-color: transparent;
      border: 1px solid black;
      color: black;
@@ -160,3 +168,29 @@ p{
     text-decoration: none;
     color: hotpink;
 }
+/* ========================================================
+                                About Me
+============================================================= */
+.main_banner{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.name{
+    font-size: 30px;
+
+}
+.half_banner img {
+    width: 304px;
+    border-radius: 9px;
+}
+.texts{
+    height: 200px;
+    text-align: center;
+
+}
+
+
+/* ================================================
+                    Footer
+============================================= */
