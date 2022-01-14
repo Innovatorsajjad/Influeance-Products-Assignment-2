@@ -132,10 +132,10 @@ p{
 .articles{
     width: 270px;
     height: 400px;
-    box-shadow: 5px 5px 15px lightgray;
+    box-shadow: 1px 1px 4px gray;
     padding: 20px;
     border-radius: 5px;
-
+    transition: .5s;
 }
 
 .articles .half_article img{
@@ -146,6 +146,9 @@ p{
     list-style: none;
     display: inline-block;
     color: orange;
-    
 }
-
+.articles:hover.articles{
+    box-shadow: 8px 8px 20px lightgray;
+    transform: translate(0px,5px);
+    cursor: pointer;
+}
