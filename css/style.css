@@ -211,7 +211,7 @@ footer{
 }
 .social_icons li a{
     color: white;
-    font-size: 20px;
+    font-size: 20px;}
   
 
 /* =============================================================
@@ -220,7 +220,7 @@ footer{
                     
 
                             /* Mobile */
-@media only screen and (max-width:688px){
+   @media only screen and (max-width:688px){
    
     .navbar{
         display:block;
