@@ -5,6 +5,9 @@
      margin: 0;
      padding: 0;
  }
+html{
+    scroll-behavior: smooth;
+}
  img{
      width:100% ;
  }
@@ -77,19 +80,21 @@ p{
  /* =============================================================
                             First Banner 
  ================================================================*/
- .first_banner{
-     display: flex;
-     align-items: center;
-     margin-top: 80px;
+ .div_banner{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
  }
 .half_banner{
     width: 530px;
+    text-align: center;
 }
   
 
  .half_banner .banner_img img {
-     width: 440px;
-     background-image:url(/images/Circle\ design.svg);
+     width: 304px;
+    border-radius:10px;
+    background-image: url(/images/Circle\ design.svg);
  }
  .information .btn{
     margin-top: 16.1px;
@@ -115,14 +120,15 @@ p{
  /*================================================
                      Logo Part
  ================================================ */
- .logo_part{
-     display: flex;
-     justify-content: space-around;
+.logo_part{
+     display: grid;
+     grid-template-columns: repeat(7,1fr);
+     align-items: center;
  }
- .logo_part li{
+.logo_part li{
      list-style: none;
- }
-
+     max-width: 50%;
+}
 
  /* ========================================================
                                 Article
@@ -135,7 +141,8 @@ p{
 .all_articles{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 20px;
+    grid-row-gap: 20px; 
+    justify-content: space-around;
 }
 .articles{
     width: 270px;
@@ -171,26 +178,9 @@ p{
 /* ========================================================
                                 About Me
 ============================================================= */
-.main_banner{
-    display: flex;
-    justify-content: space-between ;
-}
-
 .name{
-    font-size: 30px;
-
+    font-size: 25px;
 }
-.half_banner img {
-    width: 304px;
-    border-radius: 9px;
-}
-.texts{
-    height: 200px;
-    text-align: center;
-
-}
-
-
 /* ================================================
                     Footer
 ============================================= */
@@ -206,7 +196,7 @@ footer{
    text-align: center;
     padding-top: 60px;
 }
-.footer_items h2 {
+.footer_items h2, h3 {
     color: white;
 }
 .social_icons{
@@ -221,4 +211,35 @@ footer{
 }
 .social_icons li a{
     color: white;
+}
+
+/* =============================================================
+                            Media Quearis
+================================================================*/
+                    
+
+                            /* Mobile */
+@media only screen and (max-width:688px){
+   
+    .navbar{
+        display:block;
+    }
+    .first_banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .half_banner{
+        width: 100%;
+    }
+    .banner_img{
+        width: 34px;
+    }
+    .logo_part{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .all_articles{
+   grid-template-columns: repeat(1,1fr);
+    }
+    .main_banner{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
