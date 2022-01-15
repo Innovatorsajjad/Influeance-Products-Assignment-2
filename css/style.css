@@ -58,7 +58,7 @@ p{
      display: flex;
      align-items: center;
      justify-content: space-between;
- }
+    }
 
  .navbar_nav-2 ul {
      display: flex;
@@ -94,7 +94,7 @@ p{
  .half_banner .banner_img img {
      width: 304px;
     border-radius:10px;
-    background-image: url(/images/Circle\ design.svg);
+    order: 1;
  }
  .information .btn{
     margin-top: 16.1px;
@@ -129,7 +129,6 @@ p{
      list-style: none;
      max-width: 50%;
 }
-
  /* ========================================================
                                 Article
 ============================================================= */
@@ -200,18 +199,20 @@ footer{
     color: white;
 }
 .social_icons{
-    width: 100px;
+    width: 150px;
     display: flex;
     justify-content: space-between;
-
+    margin-top: 20px;
 }
 .social_icons li{
     list-style: none;
     align-items: center;
+
 }
 .social_icons li a{
     color: white;
-}
+    font-size: 20px;
+  
 
 /* =============================================================
                             Media Quearis
@@ -240,6 +241,9 @@ footer{
    grid-template-columns: repeat(1,1fr);
     }
     .main_banner{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .div_banner{
         grid-template-columns: repeat(1,1fr);
     }
 }
