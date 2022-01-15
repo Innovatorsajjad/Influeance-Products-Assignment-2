@@ -193,7 +193,7 @@ footer{
     justify-content: center;
     flex-direction: column;
    text-align: center;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 .footer_items h2, h3 {
     color: white;
@@ -202,7 +202,7 @@ footer{
     width: 150px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .social_icons li{
     list-style: none;
@@ -211,7 +211,8 @@ footer{
 }
 .social_icons li a{
     color: white;
-    font-size: 20px;}
+    font-size: 20px;
+}
   
 
 /* =============================================================
